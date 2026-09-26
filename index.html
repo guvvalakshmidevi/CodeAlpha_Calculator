@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Professional responsive calculator built using HTML, CSS and JavaScript">
+
+    <title>Professional Calculator | LAKSHMIDEVI GUVVA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator-container">
+
+        <!-- Calculator -->
+        <section class="calculator">
+
+            <!-- Header -->
+            <div class="calculator-header">
+                <div>
+                    <h1>Calculator</h1>
+                    <p>Simple • Fast • Accurate</p>
+                </div>
+
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                    ☀
+                </button>
+            </div>
+
+            <!-- Display -->
+            <div class="display-container">
+
+                <div id="previousDisplay" class="previous-display">
+                    0
+                </div>
+
+                <div id="currentDisplay" class="current-display">
+                    0
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="calculator-buttons">
+
+                <button class="btn function" data-action="clear">
+                    AC
+                </button>
+
+                <button class="btn function" data-action="delete">
+                    DEL
+                </button>
+
+                <button class="btn function" data-action="percentage">
+                    %
+                </button>
+
+                <button class="btn operator" data-operation="/">
+                    ÷
+                </button>
+
+
+                <button class="btn number" data-number="7">7</button>
+                <button class="btn number" data-number="8">8</button>
+                <button class="btn number" data-number="9">9</button>
+
+                <button class="btn operator" data-operation="*">
+                    ×
+                </button>
+
+
+                <button class="btn number" data-number="4">4</button>
+                <button class="btn number" data-number="5">5</button>
+                <button class="btn number" data-number="6">6</button>
+
+                <button class="btn operator" data-operation="-">
+                    −
+                </button>
+
+
+                <button class="btn number" data-number="1">1</button>
+                <button class="btn number" data-number="2">2</button>
+                <button class="btn number" data-number="3">3</button>
+
+                <button class="btn operator" data-operation="+">
+                    +
+                </button>
+
+
+                <button class="btn number zero" data-number="0">
+                    0
+                </button>
+
+                <button class="btn number" data-number=".">
+                    .
+                </button>
+
+                <button class="btn equals" data-action="calculate">
+                    =
+                </button>
+
+            </div>
+
+            <!-- Keyboard Hint -->
+            <p class="keyboard-hint">
+                Keyboard supported • Press Enter to calculate
+            </p>
+
+        </section>
+
+
+        <!-- History -->
+        <aside class="history">
+
+            <div class="history-header">
+                <h2>History</h2>
+
+                <button id="clearHistory">
+                    Clear
+                </button>
+            </div>
+
+            <div id="historyList" class="history-list">
+
+                <p class="empty-history">
+                    No calculations yet
+                </p>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 LAKSHMIDEVI GUVVA • Professional Calculator
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
